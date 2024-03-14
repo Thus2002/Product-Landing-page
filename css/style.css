@@ -1,1 +1,294 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Home section styles */
+.home {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.home .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.home p {
+    margin-bottom: 20px;
+}
+
+.image {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    padding: 100px 20px;
+}
+
+.about .image {
+    flex: 1;
+}
+
+.about .content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.about ul {
+    margin-bottom: 20px;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about ul li i {
+    margin-right: 10px;
+}
+
+/* Features section styles */
+.features {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.features .heading {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.features .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.features .description {
+    margin-bottom: 50px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.box i {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin-bottom: 20px;
+}
+
+/* Product section styles */
+.product {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.product .heading {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.product .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.box .price {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 20px;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact .heading {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
 
