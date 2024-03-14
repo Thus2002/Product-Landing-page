@@ -2,8 +2,8 @@
 
 $mobile: 840px;
 
-@mixin mobile {
-    @media (max-width: #{$mobile}) {
+@mixin washing machine {
+    @media (max-width: #{$washing machine}) {
         @content;
     }
 }
@@ -28,7 +28,7 @@ nav {
         max-height: 450px;
     }
 
-    @include mobile {
+    @include washing machine {
         h2 {
             font-size: 2.5rem;
         }
@@ -43,7 +43,7 @@ nav {
         max-height: 400px;
     }
 
-    @include mobile {
+    @include washing machine {
         h2 {
             font-size: 2.5rem;
         }
@@ -105,7 +105,7 @@ nav {
         }
     }
 
-    @include mobile {
+    @include washing machine {
         .box {
             margin: 0 0 3rem 0;
         }
