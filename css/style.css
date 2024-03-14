@@ -30,7 +30,7 @@ body{
     font-size: 2rem;
     padding:.7rem 3.5rem;
     border-radius: 5rem;
-    color:#fff;
+    color:#0000FF;
     background:var(--blue);
     margin-top: 1rem;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
@@ -87,7 +87,7 @@ header{
 
 header .logo{
     font-size: 2.5rem;
-    color:#fff;
+    color:#A1AEB1;
 }
 
 header .logo i{
@@ -114,19 +114,19 @@ header .navbar ul li a::before{
     bottom:-.5rem; right:0;
     width:25%;
     height:.2rem;
-    background:#fff;
+    background:#DAD8C9;
     transition: .2s linear;
 }
 
 header .navbar ul li a.active::before,
 header .navbar ul li a:hover::before{
-    left:0;
+    left:10;
     width:100%;
 }
 
 header #menu{
     font-size: 3rem;
-    color:#fff;
+    color:#C5C6C7;
     cursor: pointer;
     display: none;
 }
@@ -137,7 +137,7 @@ header #menu{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background:url(home-img.png) no-repeat;
+    background:url() no-repeat;
     background-size: 140% 85%;
     background-position: top;
     padding:1.5rem 7%;
@@ -575,7 +575,7 @@ header #menu{
     }
 
     .about .image img{
-        width:80%;
+        width:50%;
         height:auto;
     }
 
