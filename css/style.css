@@ -4,7 +4,7 @@
 
 *{
     font-family: 'Open Sans', sans-serif;
-    margin:50; padding:50;
+    margin:0; padding:0;
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
@@ -30,7 +30,7 @@ body{
     font-size: 2rem;
     padding:.7rem 3.5rem;
     border-radius: 5rem;
-    color:#0000FF;
+    color:#fff;
     background:var(--blue);
     margin-top: 1rem;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
@@ -38,29 +38,29 @@ body{
     border:none;
     overflow: hidden;
     position: relative;
-    z-index: 10;
+    z-index: 0;
 }
 
 .btn::before{
     content: '';
     position: absolute;
-    top:25; right:25;
+    top:0; right: 0;
     height:100%;
-    width:25%;
+    width:0%;
     background:#333;
     z-index: -1;
     transition: .2s linear;
 }
 
 .btn:hover::before{
-    left: 20;
+    left: 0;
     width:100%;
 }
 
 .heading{
     padding:.5rem 2rem;
     font-size: 2rem;
-    background:rgba(0,1,0,.1);
+    background:rgba(0,0,0,.1);
     color:var(--blue);
     display: inline-block;
     margin:1rem 0;
@@ -79,7 +79,7 @@ header{
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top:25; left: 25;
+    top:0; left: 0;
     z-index: 1000;
     padding:2rem 7%;
     background:var(--blue);
@@ -87,7 +87,7 @@ header{
 
 header .logo{
     font-size: 2.5rem;
-    color:#A1AEB1;
+    color:#fff;
 }
 
 header .logo i{
@@ -104,7 +104,7 @@ header .navbar ul{
 header .navbar ul li a{
     font-size: 2rem;
     margin-left: 2rem;
-    color:#A1AEB1;
+    color:#fff;
     position: relative;
 }
 
@@ -112,21 +112,21 @@ header .navbar ul li a::before{
     content: '';
     position: absolute;
     bottom:-.5rem; right:0;
-    width:25%;
+    width:0%;
     height:.2rem;
-    background:#DAD8C9;
+    background:#fff;
     transition: .2s linear;
 }
 
 header .navbar ul li a.active::before,
 header .navbar ul li a:hover::before{
-    left:10;
+    left:0;
     width:100%;
 }
 
 header #menu{
     font-size: 3rem;
-    color:#C5C6C7;
+    color:#fff;
     cursor: pointer;
     display: none;
 }
@@ -137,7 +137,7 @@ header #menu{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background:url() no-repeat;
+    background:url(home-img.png) no-repeat;
     background-size: 140% 85%;
     background-position: top;
     padding:1.5rem 7%;
@@ -391,6 +391,59 @@ header #menu{
     color:#333;
 }
 
+.faq{
+    text-align: center;
+    padding:.5rem;
+    padding-top: 8rem;
+    min-height: 100vh;
+}
+
+.faq .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.faq .row .image{
+    flex:1 1 40rem;
+    padding:.5rem;
+}
+
+.faq .row .image img{
+    height:65vh;
+    width:100%;
+}
+
+.faq .row .accordion-container{
+    flex:1 1 40rem;
+    padding:1rem;
+}
+
+.faq .row .accordion-container .accordion{
+    text-align: left;
+    padding:.5rem 0;
+}
+
+.faq .row .accordion-container .accordion .accordion-heading{
+    color:#fff;
+    background:var(--blue);
+    padding:1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.faq .row .accordion-container .accordion .accordion-content{
+    color:#333;
+    padding:1rem;
+    font-size: 1.3rem;
+    border:.2rem solid var(--blue);
+    display: none;
+}
+
+.faq .row .accordion-container .accordion:nth-child(1) .accordion-content{
+    display: block;
+}
 
 .footer{
     background:#eee;
@@ -522,7 +575,7 @@ header #menu{
     }
 
     .about .image img{
-        width:50%;
+        width:80%;
         height:auto;
     }
 
